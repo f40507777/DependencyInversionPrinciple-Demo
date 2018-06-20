@@ -8,7 +8,9 @@
 
 import Foundation
 
-class LeaveDomain: TableCellClick {
+class LeaveDomain {}
+
+extension LeaveDomain: TableCellClick {
     
     func action() {
         print("Show verify dialog")

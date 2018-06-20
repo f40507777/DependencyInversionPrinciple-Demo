@@ -8,7 +8,9 @@
 
 import Foundation
 
-class QRCode: TableCellClick {
+class QRCode {}
+
+extension QRCode: TableCellClick {
     
     func action() {
         print("Scan QRCode")

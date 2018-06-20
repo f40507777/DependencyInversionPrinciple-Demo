@@ -8,11 +8,12 @@
 
 import Foundation
 
-class MyInfo: TableCellClick {
+class MyInfo {}
+
+extension MyInfo: TableCellClick {
     
     func action() {
         print("push to my info page")
     }
     
 }
-
