@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		B633759A20DA53E600130ED0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633759920DA53E600130ED0 /* AppDelegate.swift */; };
-		B633759C20DA53E600130ED0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B633759B20DA53E600130ED0 /* ViewController.swift */; };
 		B633759F20DA53E600130ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B633759D20DA53E600130ED0 /* Main.storyboard */; };
 		B63375A120DA53E700130ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B63375A020DA53E700130ED0 /* Assets.xcassets */; };
 		B63375A420DA53E700130ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B63375A220DA53E700130ED0 /* LaunchScreen.storyboard */; };
 		B63375AF20DA53E700130ED0 /* DependencyInversionPrinciple_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375AE20DA53E700130ED0 /* DependencyInversionPrinciple_DemoTests.swift */; };
+		B63375BA20DA543500130ED0 /* DomainSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375B920DA543500130ED0 /* DomainSettingController.swift */; };
+		B63375BC20DA55DC00130ED0 /* MyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375BB20DA55DC00130ED0 /* MyInfo.swift */; };
+		B63375C020DA56D300130ED0 /* LeaveDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375BF20DA56D300130ED0 /* LeaveDomain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		B633759620DA53E600130ED0 /* DependencyInversionPrinciple-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DependencyInversionPrinciple-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B633759920DA53E600130ED0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B633759B20DA53E600130ED0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B633759E20DA53E600130ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B63375A020DA53E700130ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B63375A320DA53E700130ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		B63375AA20DA53E700130ED0 /* DependencyInversionPrinciple-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "DependencyInversionPrinciple-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B63375AE20DA53E700130ED0 /* DependencyInversionPrinciple_DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInversionPrinciple_DemoTests.swift; sourceTree = "<group>"; };
 		B63375B020DA53E700130ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B63375B920DA543500130ED0 /* DomainSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainSettingController.swift; sourceTree = "<group>"; };
+		B63375BB20DA55DC00130ED0 /* MyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfo.swift; sourceTree = "<group>"; };
+		B63375BF20DA56D300130ED0 /* LeaveDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveDomain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				B633759920DA53E600130ED0 /* AppDelegate.swift */,
-				B633759B20DA53E600130ED0 /* ViewController.swift */,
 				B633759D20DA53E600130ED0 /* Main.storyboard */,
 				B63375A020DA53E700130ED0 /* Assets.xcassets */,
 				B63375A220DA53E700130ED0 /* LaunchScreen.storyboard */,
 				B63375A520DA53E700130ED0 /* Info.plist */,
+				B63375B920DA543500130ED0 /* DomainSettingController.swift */,
+				B63375BB20DA55DC00130ED0 /* MyInfo.swift */,
+				B63375BF20DA56D300130ED0 /* LeaveDomain.swift */,
 			);
 			path = "DependencyInversionPrinciple-Demo";
 			sourceTree = "<group>";
@@ -197,7 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B633759C20DA53E600130ED0 /* ViewController.swift in Sources */,
+				B63375BA20DA543500130ED0 /* DomainSettingController.swift in Sources */,
+				B63375C020DA56D300130ED0 /* LeaveDomain.swift in Sources */,
+				B63375BC20DA55DC00130ED0 /* MyInfo.swift in Sources */,
 				B633759A20DA53E600130ED0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
