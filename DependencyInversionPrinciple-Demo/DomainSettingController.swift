@@ -10,11 +10,13 @@ import UIKit
 
 class DomainSettingController: UITableViewController {
 
-    var cellDataArray: [TableCell] = [MyInfo(),
-                                      LeaveDomain()]
+    var cellDatas: [TableCellClick] = [MyInfo(),
+                                       QRCode(),
+                                       LeaveDomain()]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
     }
 
@@ -23,7 +25,7 @@ class DomainSettingController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return 3
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -36,6 +38,8 @@ class DomainSettingController: UITableViewController {
         if indexPath.row == 0 {
             cell?.textLabel?.text = "所有成員"
         } else if indexPath.row == 1 {
+            cell?.textLabel?.text = "掃描QRCode"
+        } else if indexPath.row == 2 {
             cell?.textLabel?.text = "離開社群"
         }
         
@@ -43,7 +47,7 @@ class DomainSettingController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        cellDataArray[indexPath.row].clickAction()
+        cellDatas[indexPath.row].action()
     }
 
 }

@@ -1,5 +1,5 @@
 //
-//  LeaveDomain.swift
+//  QRCode.swift
 //  DependencyInversionPrinciple-Demo
 //
 //  Created by Finn on 2018/6/20.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-class LeaveDomain: TableCellClick {
+class QRCode: TableCellClick {
     
     func action() {
-        print("Show verify dialog")
+        print("Scan QRCode")
     }
     
 }

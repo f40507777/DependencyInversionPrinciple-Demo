@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol TableCell {
-    func clickAction()
+protocol TableCellClick {
+    func action()
 }
