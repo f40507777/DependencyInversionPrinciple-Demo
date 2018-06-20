@@ -10,6 +10,9 @@ import UIKit
 
 class DomainSettingController: UITableViewController {
 
+    var cellDataArray: [TableCell] = [MyInfo(),
+                                      LeaveDomain()]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -20,7 +23,7 @@ class DomainSettingController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 2
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -32,17 +35,15 @@ class DomainSettingController: UITableViewController {
         
         if indexPath.row == 0 {
             cell?.textLabel?.text = "所有成員"
+        } else if indexPath.row == 1 {
+            cell?.textLabel?.text = "離開社群"
         }
         
         return cell!
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row == 0 {
-            MyInfo().pushToPage()
-        } else if indexPath.row == 1 {
-            LeaveDomain().leaveFlow()
-        }
+        cellDataArray[indexPath.row].clickAction()
     }
 
 }

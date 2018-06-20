@@ -9,8 +9,13 @@
 import Foundation
 
 class LeaveDomain {
+
+}
+
+extension LeaveDomain: TableCell {
     
-    func leaveFlow() {
+    func clickAction() {
         print("Show verify dialog")
     }
+    
 }

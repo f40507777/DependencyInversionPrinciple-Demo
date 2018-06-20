@@ -15,6 +15,7 @@
 		B63375BA20DA543500130ED0 /* DomainSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375B920DA543500130ED0 /* DomainSettingController.swift */; };
 		B63375BC20DA55DC00130ED0 /* MyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375BB20DA55DC00130ED0 /* MyInfo.swift */; };
 		B63375C020DA56D300130ED0 /* LeaveDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375BF20DA56D300130ED0 /* LeaveDomain.swift */; };
+		B63375C220DA58F700130ED0 /* TableCellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63375C120DA58F700130ED0 /* TableCellData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		B63375B920DA543500130ED0 /* DomainSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainSettingController.swift; sourceTree = "<group>"; };
 		B63375BB20DA55DC00130ED0 /* MyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfo.swift; sourceTree = "<group>"; };
 		B63375BF20DA56D300130ED0 /* LeaveDomain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaveDomain.swift; sourceTree = "<group>"; };
+		B63375C120DA58F700130ED0 /* TableCellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				B63375B920DA543500130ED0 /* DomainSettingController.swift */,
 				B63375BB20DA55DC00130ED0 /* MyInfo.swift */,
 				B63375BF20DA56D300130ED0 /* LeaveDomain.swift */,
+				B63375C120DA58F700130ED0 /* TableCellData.swift */,
 			);
 			path = "DependencyInversionPrinciple-Demo";
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			files = (
 				B63375BA20DA543500130ED0 /* DomainSettingController.swift in Sources */,
 				B63375C020DA56D300130ED0 /* LeaveDomain.swift in Sources */,
+				B63375C220DA58F700130ED0 /* TableCellData.swift in Sources */,
 				B63375BC20DA55DC00130ED0 /* MyInfo.swift in Sources */,
 				B633759A20DA53E600130ED0 /* AppDelegate.swift in Sources */,
 			);

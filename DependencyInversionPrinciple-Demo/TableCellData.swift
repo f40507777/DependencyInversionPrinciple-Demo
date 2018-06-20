@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  TableCellData.swift
 //  DependencyInversionPrinciple-Demo
 //
 //  Created by Finn on 2018/6/20.
@@ -8,13 +8,6 @@
 
 import Foundation
 
-class MyInfo {
-
-}
-
-extension MyInfo: TableCell {
-    
-    func clickAction() {
-        print("push to my info page")
-    }
+protocol TableCell {
+    func clickAction()
 }
